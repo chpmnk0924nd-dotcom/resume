@@ -81,6 +81,26 @@ In `styles.css`, find the `:root` section and modify:
 
 ## Deployment Options
 
+### Quick Update & Deploy Checklist (GitHub + Azure)
+
+Use this whenever you make changes and want to publish updates:
+
+```bash
+git add .
+git commit -m "Update resume"
+git push origin master
+```
+
+Then:
+1. Open **GitHub → Actions** and confirm the deployment workflow passes.
+2. Wait 1–3 minutes for Azure Static Web Apps to update.
+3. Refresh your live site URL.
+
+If deployment fails:
+- Confirm you pushed to the `master` branch.
+- Check `.github/workflows/azure-static-web-apps-agreeable-forest-0692fea1e.yml`.
+- Verify the repo secret `AZURE_STATIC_WEB_APPS_API_TOKEN_AGREEABLE_FOREST_0692FEA1E` is valid.
+
 ### GitHub Pages (Free)
 1. Create a GitHub repository
 2. Upload these files

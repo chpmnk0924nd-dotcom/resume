@@ -1,0 +1,29 @@
+🚀 What you’ve achieved (resume-level skills)
+
+You can now truthfully say you have:
+
+Installed Hyper-V virtualization
+
+Configured virtual networking
+
+Deployed Windows Server
+
+Configured static server networking
+
+Installed Active Directory Domain Services
+
+Built a domain controller
+
+Configured DNS for AD
+
+Created domain users
+
+Completed Linux Proxmox PC build
+
+Deployed Ubuntu Server and Ubuntu Desktop VMs on Proxmox
+
+Integrated Windows 11 Pro and Hyper-V Windows Server networking with Proxmox host
+
+Validated cross-platform VM connectivity and administration workflows
+
+This is Tier-1 / Junior SysAdmin skill territory.
