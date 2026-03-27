@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicholas Deno – IT Support Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    /* ── Page wrapper ── */
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 44px;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 3px solid #1a5276;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a5276;
+      letter-spacing: 0.5px;
+    }
+    header h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #444;
+      margin-top: 3px;
+    }
+    .contact-line {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      font-size: 12px;
+      color: #333;
+    }
+    .contact-line span::before {
+      content: "• ";
+      color: #1a5276;
+    }
+    .contact-line span:first-child::before { content: ""; }
+
+    /* ── Section ── */
+    section { margin-bottom: 16px; }
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #1a5276;
+      border-bottom: 1px solid #aac4de;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Summary ── */
+    .summary p { font-size: 13px; color: #222; }
+
+    /* ── Skills grid ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 16px;
+    }
+    .skills-grid li {
+      list-style: none;
+      font-size: 12.5px;
+      padding: 1px 0;
+    }
+    .skills-grid li::before {
+      content: "▸ ";
+      color: #1a5276;
+      font-size: 10px;
+    }
+
+    /* ── Experience / Education entries ── */
+    .entry { margin-bottom: 11px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+    .entry-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: #1a1a1a;
+    }
+    .entry-date {
+      font-size: 11.5px;
+      color: #555;
+      white-space: nowrap;
+    }
+    .entry-sub {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    .entry ul {
+      padding-left: 16px;
+    }
+    .entry ul li {
+      margin-bottom: 2px;
+      font-size: 12.5px;
+    }
+
+    /* ── Certifications ── */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px 20px;
+    }
+    .certs-grid li {
+      list-style: none;
+      font-size: 12px;
+      padding: 1px 0;
+      border-bottom: 1px dotted #dde;
+    }
+    .certs-grid li .cert-name { font-weight: 600; }
+    .certs-grid li .cert-issuer { color: #555; font-size: 11px; }
+
+    /* ── Projects ── */
+    .project-entry { margin-bottom: 8px; }
+    .project-entry .project-title { font-weight: 700; font-size: 12.5px; color: #1a5276; }
+    .project-entry p { font-size: 12px; color: #333; }
+
+    /* ── Print ── */
+    @media print {
+      body { font-size: 12px; }
+      .page { padding: 20px 28px; }
+      header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <header>
+    <h1>Nicholas (Nick) Deno</h1>
+    <h2>IT Support Specialist &nbsp;|&nbsp; Help Desk &nbsp;|&nbsp; Jr. System Administrator</h2>
+    <div class="contact-line">
+      <span>Huber Heights, OH (Open to Remote)</span>
+      <span>nicholasandrewdeno@outlook.com</span>
+      <span>(937) 609-7774</span>
+      <span>linkedin.com/in/nicholas-deno</span>
+    </div>
+  </header>
+
+  <!-- ══════════════════ SUMMARY ══════════════════ -->
+  <section class="summary">
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Entry-level IT Support professional pursuing a B.S. in Information Technology (University of Phoenix).
+      Hands-on experience through a self-built home lab covering Windows 10/11, Windows Server 2025, Active Directory,
+      Group Policy, VMware, Hyper-V, Proxmox, Docker, Linux (Ubuntu, Rocky Linux), network administration,
+      DNS/DHCP, subnetting, and cloud services (Microsoft Azure). Experienced with help desk ticketing workflows,
+      Wireshark packet analysis, SQL Server administration, and scripting with PowerShell and Python.
+      CompTIA A+ candidate with a customer-first mindset and 20+ years of professional customer service experience.
+      Actively seeking Help Desk Technician, IT Support Specialist, or Jr. Systems Administrator opportunities.
+    </p>
+  </section>
+
+  <!-- ══════════════════ CORE SKILLS ══════════════════ -->
+  <section>
+    <div class="section-title">Core Technical Skills</div>
+    <ul class="skills-grid">
+      <li>Windows 10 / 11 Troubleshooting</li>
+      <li>Windows Server 2019 / 2022 / 2025</li>
+      <li>Active Directory &amp; Group Policy</li>
+      <li>Help Desk &amp; IT Ticketing Systems</li>
+      <li>VMware Workstation / VMware ESXi</li>
+      <li>Hyper-V &amp; Proxmox Virtualization</li>
+      <li>Docker &amp; Portainer Containerization</li>
+      <li>Linux Administration (Ubuntu, Rocky)</li>
+      <li>TCP/IP, DNS, DHCP, Subnetting</li>
+      <li>Network Troubleshooting &amp; Diagnostics</li>
+      <li>Wireshark Packet Analysis (QUIC/UDP)</li>
+      <li>Microsoft Azure &amp; Azure Data Studio</li>
+      <li>SQL Server, MySQL, MariaDB</li>
+      <li>PowerShell Scripting &amp; Automation</li>
+      <li>Zabbix &amp; Uptime Kuma Monitoring</li>
+      <li>Synology NAS Server Administration</li>
+      <li>Windows Admin Center</li>
+      <li>Remote Desktop &amp; Remote Support</li>
+      <li>PC Hardware Build &amp; Repair</li>
+      <li>Python, JavaScript, HTML/CSS, C#</li>
+      <li>Microsoft 365 / SharePoint / Power BI</li>
+      <li>Customer Service &amp; End-User Support</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════ EXPERIENCE ══════════════════ -->
+  <section>
+    <div class="section-title">Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">IT Support Trainee (Home Lab / Self-Study)</span>
+        <span class="entry-date">Dec 2025 – Present</span>
+      </div>
+      <div class="entry-sub">Self-Employed &nbsp;|&nbsp; Dayton, OH (Hybrid)</div>
+      <ul>
+        <li>Built and manage a multi-machine home lab network including a Synology NAS, managed switch, dedicated router/modem, and multiple VMs (Windows Server 2025, Ubuntu, Rocky Linux, macOS).</li>
+        <li>Configured Active Directory, Group Policy Objects (GPOs), user account management, and Windows Admin Center to simulate enterprise IT environments.</li>
+        <li>Deployed and administered Docker containers (Portainer, Ollama local AI server) on a self-built Proxmox server; orchestrated Ubuntu Server and Ubuntu Desktop VMs.</li>
+        <li>Performed network diagnostics using Wireshark—captured and analyzed encrypted QUIC/UDP 443 traffic, identified handshake behavior, and documented troubleshooting methodology.</li>
+        <li>Managed SQL Server and MySQL databases via Azure Data Studio: built schemas, wrote queries, and administered table-level permissions.</li>
+        <li>Automated system administration tasks with PowerShell including Windows environment security hardening.</li>
+        <li>Monitored lab uptime and performance using Zabbix and Uptime Kuma dashboards integrated with Microsoft Azure.</li>
+        <li>Designed and deployed IT Help Desk ticketing forms (Google Forms, Windows Forms) to simulate real-world support ticket workflows and SLA tracking.</li>
+        <li>Created and published a static resume website to Microsoft Azure (Azure Static Web Apps).</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Volunteer – IT &amp; Coding Instructor</span>
+        <span class="entry-date">Jan 2026 – Present</span>
+      </div>
+      <div class="entry-sub">Back to Basics Youth Education Center &nbsp;|&nbsp; Dayton, OH (On-site)</div>
+      <ul>
+        <li>Teach computer coding, AI fundamentals, and technology skills to at-risk youth in Dayton Public Schools.</li>
+        <li>Provide hands-on technology mentorship, computer maintenance instruction, and career guidance for students pursuing IT career paths.</li>
+        <li>Apply strong communication, leadership, and customer support skills to engage and motivate diverse learners.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Customer Service Representative / Web Designer</span>
+        <span class="entry-date">Apr 2005 – Jan 2026</span>
+      </div>
+      <div class="entry-sub">Website Design (Freelance) &nbsp;|&nbsp; Remote</div>
+      <ul>
+        <li>Provided over 20 years of front-line customer service and technical support for web and database-driven projects.</li>
+        <li>Designed and maintained websites for religious organizations; performed database maintenance, data entry, and record management.</li>
+        <li>Managed Windows 10/11 environments, file systems, and application support in a remote work setting.</li>
+        <li>Created branded digital assets using Adobe Photoshop and Illustrator.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Forklift Operator / Database Entry / Trainer</span>
+        <span class="entry-date">Jun 2025 – Dec 2025</span>
+      </div>
+      <div class="entry-sub">Topre America Corporation &nbsp;|&nbsp; Springfield, OH</div>
+      <ul>
+        <li>Performed database entry and maintained accurate records using Microsoft Office tools.</li>
+        <li>Trained new employees on operational procedures, demonstrating leadership and technical instruction skills.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════ PROJECTS ══════════════════ -->
+  <section>
+    <div class="section-title">IT Home Lab Projects</div>
+
+    <div class="project-entry">
+      <span class="project-title">Home Lab Network (Mar 2026 – Present)</span>
+      <p>Enterprise-style home network with dedicated modem/router, managed switch, Synology NAS, Windows Server 2025 VM, Azure Monitor integration, Group Policy management, and multi-OS client endpoints (Windows 11, Ubuntu, Rocky Linux).</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-title">Proxmox / Linux Virtualization Server (Mar 2026 – Present)</span>
+      <p>Self-built PC running Proxmox; hosts Ubuntu Server, Ubuntu Desktop, a local AI server (Ollama), Docker/Portainer container management, and Uptime Kuma monitoring. Demonstrates hypervisor configuration, container orchestration, and server uptime management.</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-title">Windows Admin Center &amp; Active Directory Lab (Jan 2026 – Present)</span>
+      <p>Configured Windows Server 2025 VM with Windows Admin Center; added Windows 10 client; managed GPOs, user accounts, and permissions from a Windows 11 host machine—simulating a domain environment.</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-title">Azure Data Studio / SQL Server Lab (Dec 2025 – Present)</span>
+      <p>Spun up SQL Server inside a Docker container; used Azure Data Studio to build/query relational databases, manage roles, and explore Azure relational database services.</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-title">Wireshark Packet Capture Lab (Dec 2025 – Present)</span>
+      <p>Captured and analyzed QUIC over UDP/443 encrypted traffic; documented handshake behavior, protocol identification, and troubleshooting steps for encrypted stream analysis.</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-title">IT Help Desk Ticket System (Dec 2025 – Present)</span>
+      <p>Built and tested IT helpdesk ticketing forms using Google Forms and Windows Forms; analyzed ticket data with graphs and reports to simulate a real-world service desk environment.</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-title">Synology NAS &amp; Network Infrastructure (Sep 2025 – Present)</span>
+      <p>Designed and deployed a home lab with Synology NAS server, secondary modem/router, network switch, subnetting, routing protocols, and user permission management.</p>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════ EDUCATION ══════════════════ -->
+  <section>
+    <div class="section-title">Education</div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Bachelor of Science – Information Technology</span>
+        <span class="entry-date">Sep 2025 – Present</span>
+      </div>
+      <div class="entry-sub">University of Phoenix &nbsp;|&nbsp; Currently Enrolled</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CERTIFICATIONS ══════════════════ -->
+  <section>
+    <div class="section-title">Certifications &amp; Training</div>
+    <ul class="certs-grid">
+      <li>
+        <span class="cert-name">CompTIA A+ Core 1 (220-1201) Cert Prep</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">Career Essentials in System Administration</span><br/>
+        <span class="cert-issuer">Microsoft &amp; LinkedIn · Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">Windows 11 for IT Support (Basic, Intermediate, Advanced)</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">PowerShell: Securing Windows Environments</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">Wireshark: Network Troubleshooting</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">IT Help Desk for Beginners</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">Introduction to Generative AI and Agents</span><br/>
+        <span class="cert-issuer">Microsoft · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">Explore Fundamentals of Real-Time Analytics</span><br/>
+        <span class="cert-issuer">Microsoft · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">Get Data in Power BI / Get Started with Power BI</span><br/>
+        <span class="cert-issuer">Microsoft · Nov–Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">Azure Relational Databases &amp; Cloud Computing</span><br/>
+        <span class="cert-issuer">Microsoft · Oct–Nov 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">C# Programming Fundamentals (4 Modules)</span><br/>
+        <span class="cert-issuer">Microsoft · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">Networking Foundations, IP Addressing &amp; Subnetting</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Nov–Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">Learning Virtualization &amp; PC Maintenance</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">Python Essential Training</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">JavaScript Essential Training</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">Operating System Forensics &amp; Cybersecurity Terminology</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">Database Foundations (Structures &amp; Intro)</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">SharePoint Online Essential Training</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Dec 2025</span>
+      </li>
+      <li>
+        <span class="cert-name">Scrum: The Basics</span><br/>
+        <span class="cert-issuer">LinkedIn Learning · Jan 2026</span>
+      </li>
+      <li>
+        <span class="cert-name">Intentional Communicator &amp; Strategic Problem Solver</span><br/>
+        <span class="cert-issuer">University of Phoenix · Feb–Mar 2026</span>
+      </li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>
